@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="leroyApp">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Leroy Test</title>
+    
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/src/js/controllers/app.js"></script>
+      </head>
+
+  <body>
+
+    <div ng-controller="ShoppingCart">
+      Carrinho de compras:
+
+      <input type="text" ng-model="buy.total">
+
+      <section>
+        <div id="card-one">
+          Cartão 1
+
+          <section>
+            <input type="text" ng-model="buy.cardOne" disabled="disabled">
+          </section>
+        </div>
+
+        <div id="card-two" ng-show="twoCards">
+          Cartão 2
+
+          <section>
+            <input type="text" ng-model="buy.cardTwo">
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <script src="/src/js/modules/price-format.min.js"></script>
+
+  </body>
+</html>
