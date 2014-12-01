@@ -24,7 +24,7 @@ python -m SimpleHTTPServer 8000
 ```
 
 ## Accessing
-[localhost:8000](localhost:8000)
+[localhost:8000](http://localhost:8000)
 
 ## Testing
 
