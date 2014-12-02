@@ -19,24 +19,24 @@
 
       <section>
         <div id="card-one">
-          Cartão 1
+          <h3>Cartão 1</h3>
 
           <section>
-            <input type="text" ng-model="buy.cardOne" disabled="disabled">
+            <input type="text" ng-model="buy.cards.card_one.total" disabled="disabled">
+            <input type="text" ng-model="buy.cards.card_one.installments">
           </section>
         </div>
 
-        <div id="card-two" ng-show="twoCards">
-          Cartão 2
+        <div id="card-two" ng-show="two_cards">
+          <h3>Cartão 2</h3>
 
           <section>
-            <input type="text" ng-model="buy.cardTwo">
+            <input type="text" ng-model="buy.cards.card_two.total">
+            <input type="text" ng-model="buy.cards.card_two.installments">
           </section>
         </div>
       </section>
     </div>
-
-    <script src="/src/js/modules/price-format.min.js"></script>
 
   </body>
 </html>
